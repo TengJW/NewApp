@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.example.t.myapplication.util.HorizontalListView
+        android:id="@+id/horizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.example.t.myapplication.util.HorizontalListView>
+
+    <ListView
+        android:id="@+id/Fragment_listView"
+        android:layout_width="match_parent"
+        android:clickable="true"
+
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_local"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C10808">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="本地"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/iv_local_back"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@+id/title_local"
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dingwei"
+            android:layout_width="40dp"
+            android:text="定位"
+            android:layout_height="60dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>

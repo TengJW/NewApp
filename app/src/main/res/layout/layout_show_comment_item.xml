@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <com.example.t.myapplication.view.XCRoundRectImageView
+            android:id="@+id/img_comment"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_comment_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_comment"
+            android:text="北京手机网友" />
+
+        <TextView
+            android:id="@+id/tv_comment_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#D4D4D4"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="2014-08-08" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_userscomment"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:text="这里是评论"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
